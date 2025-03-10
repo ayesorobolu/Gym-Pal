@@ -1,0 +1,296 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* layout */
+:root {
+  --primary: #1aac83  !important ;
+  --error: #e7195a  !important;
+}
+
+body {
+  background: #f1f1f1  !important;
+  margin: 0  !important;
+  font-family: "Poppins"  !important;
+}
+
+header {
+  height: 10vh  !important;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364)  !important;
+  padding: 15px 0  !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)  !important;
+}
+
+header h1{
+color: #1aac83 !important;
+}
+
+header .container{
+  max-width: 1400px  !important;
+  margin: 0 auto  !important;
+  padding: 0px 20px  !important;
+  display: flex  !important;
+  align-items: center  !important;
+  justify-content:space-between !important;
+  flex-wrap: nowrap !important;
+  gap: 20px !important;
+}
+
+header .logo {
+  text-decoration: none !important;
+  flex-shrink:0 !important;
+  display: flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+header .logo h1 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 32px !important;
+  letter-spacing: 2px !important;
+  color: white !important;
+  text-transform: uppercase !important;
+  transition: color 0.3s ease-in-out !important;
+
+}
+
+.logo h1:hover {
+  color: #1abc9c !important;
+}
+
+.icon{
+padding-top: 10px  !important;  
+}
+
+.nav-button{
+  background-color: #319795 !important; 
+  color: white !important;
+  border: none !important; 
+  border-radius: 999px !important; 
+  font-size: 1.125rem !important; 
+  padding: 12px 24px !important; 
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease-in-out !important;
+}
+
+.nav-button:hover{
+  background-color: #2c7a7b !important; 
+}
+
+.square {
+  font-size: 22px  !important;
+}
+
+.pages{
+  max-width: 1400px  !important;
+  padding: 20px  !important;
+  margin: 0 auto  !important;
+
+}
+
+h2{
+  font-size: 18px  !important;
+}
+
+h1{
+  font-size: 32px  !important;
+}
+
+.workout-details {
+  background: #fff  !important;
+  border-radius:10px  !important;
+  margin: 20px auto  !important;
+  padding: 20px  !important;
+  position: relative  !important;
+  width: 440px  !important;
+  height: 35vh  !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0.5, 0.5)  !important; 
+}
+
+.workout-details h4{
+  margin: 0 0 10px 0  !important;
+  font-size: 1.2em  !important;
+  font-weight: bold !important;
+  color: var(--primary) !important;
+}
+
+.workout-details p{
+ margin: 0 !important;
+ font-size: 0.9em !important; 
+ color: #555 !important;
+}
+
+.workout-details span{
+  position: absolute  !important;
+  top: 20px  !important;
+  right: 20px  !important;
+  cursor: pointer  !important;
+  padding: 6px  !important;
+  border-radius: 20%  !important;
+  color:#333  !important ;
+}
+
+div.error{
+  padding: 10px !important;
+  background: #ffefef !important;
+  border: 1px solid var(--error) !important;
+  color: var(--error) !important;
+  border-radius: 4px !important;
+  margin: 20px 0 !important ;
+}
+
+input.error{
+  border: 1px solid var(--error) !important;
+}
+
+.form-container {
+  display: flex  !important;
+  justify-content: center  !important;
+  align-items: center  !important;
+  height: 80vh  !important;
+}
+
+.create {
+  background: white  !important;
+  padding: 25px  !important;
+  border-radius: 8px  !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)  !important;
+  max-width: 600px  !important;
+  width: 100%  !important;
+  display: flex  !important;
+  flex-direction: column  !important;
+}
+
+h3 {
+  text-align: center  !important;
+  color: #2c3e50  !important;
+  margin-bottom: 20px  !important;
+}
+
+label {
+  font-weight: bold  !important;
+  margin-top: 10px  !important;
+  color: #34495e  !important;
+}
+
+input {
+  padding: 10px  !important;
+  border: 1px solid #1f73ab  !important;
+  border-radius: 5px  !important;
+  margin-top: 5px  !important;
+  outline: none  !important;
+  transition: all 0.3s  !important;
+}
+
+input:focus {
+  border-color: var(--primary)  !important;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5)  !important;
+}
+
+form button {
+  margin-top: 15px  !important;
+  padding: 10px  !important;
+  background: #319795  !important;
+  color: white  !important;
+  border: none  !important;
+  border-radius: 5px  !important;
+  font-size: 16px  !important;
+  cursor: pointer  !important;
+  transition: background 0.3s ease  !important;
+}
+
+form button:hover {
+  background: #399a98cc !important;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+  .workout-details {
+    width: 350px !important;
+    height: 35vh !important;
+  }
+
+  .nav-button{
+    margin-bottom: 17px  !important;
+  }
+
+  header .logo h1{
+    margin-bottom: 13px  !important;
+  }
+}
+
+@media screen and (min-width:769px)  and ( max-width: 991px) {
+  .workout-details {
+    width: 375px !important;
+    height: 35vh !important;
+  }
+
+  .nav-button{
+    margin-bottom: 17px  !important;
+  }
+
+  header .logo h1{
+    margin-bottom: 13px  !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .workout-details {
+    width: 278px !important;
+    height: 35vh !important;
+  }
+
+  .form-container {
+    height: 85vh  !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+
+  .nav-button {
+    size: "small" !important;
+    padding: 19px 7px !important;
+    margin-left: 5px  !important;
+    margin-bottom: 17px  !important;
+  }
+
+  header .logo h1 {
+font-size: 26px !important;
+margin-bottom: 13px  !important;
+  }
+}
+
+@media (min-width:992px)  and ( max-width: 1100px){
+  .workout-details {
+    width: 310px !important;
+    height: 35vh !important;
+  }
+
+  .nav-button{
+    margin-bottom: 17px  !important;
+  }
+  header .logo h1{
+    margin-bottom: 13px  !important;
+  }
+}
+
+@media (min-width:1100px)  and ( max-width: 1374px){
+  .workout-details {
+    width: 350px !important;
+    height: 35vh !important;
+  } 
+
+  .nav-button{
+    margin-bottom: 17px  !important;
+  }
+
+  header .logo h1{
+    margin-bottom: 13px  !important;
+  }
+}
